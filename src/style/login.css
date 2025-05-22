@@ -1,0 +1,39 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: bold;
+}
+
+.login-form input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 250px; /* Or a suitable width */
+}
+
+.login-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--action-color, #007bff); /* Using a variable if available, else a default blue */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.login-form button:hover {
+  background-color: var(--action-color-hover, #0056b3); /* Darker shade for hover */
+}
+
+.login-form h2 {
+ margin-bottom: 1rem;
+}
