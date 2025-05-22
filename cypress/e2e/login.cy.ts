@@ -24,4 +24,8 @@ describe('Login Page', () => {
     cy.get('input[name="username"]').type('testuser').should('have.value', 'testuser');
     cy.get('input[name="password"]').type('testpassword').should('have.value', 'testpassword');
   });
+
+  it('should display a "Forgot Password?" link', () => {
+    cy.get('a').contains('Forgot Password?').should('be.visible').and('have.attr', 'href', '#');
+  });
 });
